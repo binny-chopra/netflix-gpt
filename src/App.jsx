@@ -1,10 +1,10 @@
-import './App.css'
+import Body from "./components/Body";
 
-function App() {
-
+const App = () => {
   return (
-    <h1 className='text-red-500'>Namaste React</h1>
-  )
-}
-
-export default App
+    <div>
+      <Body />
+    </div>
+  );
+};
+export default App;

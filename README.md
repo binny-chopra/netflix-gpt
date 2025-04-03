@@ -12,21 +12,30 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 # Tailwind installation
+
 https://www.youtube.com/watch?v=sHnG8tIYMB4
 https://tailwindcss.com/docs/installation/using-vite
 
+# Netflix GPT
+
+    - Vite
+    - Configured TailwindCSS
+    - Header
+    - Login Form
+    - Sign Up Form
 
 # Features
+
 - Login/Signup
-    - Sign In/Sign up Form
-    - redirect to Browse Page
+  - Sign In/Sign up Form
+  - redirect to Browse Page
 - Browse (after authentication)
-    - Header
-    - Maon Movie
-        - Trailor in BG
-        - Title & Description
-        - Movie Suggestions
-            - MovieLists * N
-- NetflixGPT
-    - Search Bar
+  - Header
+  - Maon Movie
+    - Trailor in BG
+    - Title & Description
     - Movie Suggestions
+      - MovieLists \* N
+- NetflixGPT
+  - Search Bar
+  - Movie Suggestions
