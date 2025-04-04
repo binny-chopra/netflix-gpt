@@ -16,6 +16,9 @@ If you are developing a production application, we recommend using TypeScript an
 https://www.youtube.com/watch?v=sHnG8tIYMB4
 https://tailwindcss.com/docs/installation/using-vite
 
+Username: binny@gmail.com
+Password: Binny@123
+
 # Netflix GPT
 
     - Vite
@@ -28,6 +31,7 @@ https://tailwindcss.com/docs/installation/using-vite
     - useRef Hook
     - Firebase Setup
     - Deploying our app to production
+    - Create SignUp User Account
 
 # Features
 
