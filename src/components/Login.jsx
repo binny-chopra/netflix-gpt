@@ -7,14 +7,13 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMsg, setErrMsg] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const email = useRef(null);
@@ -35,7 +34,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/110620397?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -47,7 +46,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               setErrMsg(error.message);
@@ -64,10 +62,7 @@ const Login = () => {
         email.current.value,
         password.current.value
       )
-        .then((/*userCredential*/) => {
-          // const user = userCredential.user;
-          navigate("/browse");
-        })
+        .then(() => {})
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
@@ -127,6 +122,7 @@ const Login = () => {
             ? "New to Netflix? Sign Up Now"
             : "Already registered? Sign In Now"}
         </p>
+        {isSignInForm && <p>(Hint: binny@gmail.com, Binny@123)</p>}
       </form>
     </div>
   );

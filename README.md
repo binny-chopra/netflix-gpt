@@ -36,6 +36,12 @@ Password: Binny@123
     - CreatedRedux Store with userSlice
     - Implemented Sign Out
     - Update Profile
+    - BugFix: Sign up user displayName
+    - BugFix: if the user is not logged in Redirect /browse to Login page and vice-cersa
+    - Unsubscribed to the onAuthStateChanged callback
+    - Add hardcoded values to the constant files
+    - Register TMDB API & create an app & get access token
+    - Get data from TMDB now playing movies list API
     - Fetch from TMDB Movies
 
 # Features
